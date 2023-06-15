@@ -11,22 +11,22 @@
 //     console.log(data)
 // })
 
-// const video = document.querySelector('video')
+const video = document.querySelector('video')
 
-// navigator.mediaDevices.getUserMedia({
-//     video: true,
-// }).then(stream => {
-//     video.srcObject = stream
-//     video.play()
-// }).catch((error) => {
-//     console.log('Ошибка подключения', error);
-// })
+navigator.mediaDevices.getUserMedia({
+    video: true,
+}).then(stream => {
+    video.srcObject = stream
+    video.play()
+}).catch((error) => {
+    console.log('Ошибка подключения', error);
+})
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-btn.addEventListener('click', () => getInfo())
+// btn.addEventListener('click', () => getInfo())
 
-function getInfo() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(data => console.log(data))
-}
+// function getInfo() {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//         .then(data => console.log(data))
+// }
